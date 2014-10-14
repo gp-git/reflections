@@ -1,0 +1,11 @@
+1) What happens when you initialize a repository? Why do you need to do it?
+Ans  I initialized a repository using $ git init.  This created a new
+file named .git and a repository is required to do a commit action.
+
+2) How is the staging area different from the working directory and the repository? 
+What value do you think it offers?
+Ans  The staging area contains files ready to be committed into the repository.
+The working area contains files in various modes of modification to achieve a
+new version objective.  Files in the working area can be added to the staging
+area; files in the working area cannot be committed where files in the staging
+area can be committed.

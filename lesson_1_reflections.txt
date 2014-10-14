@@ -1,0 +1,50 @@
+1) How did viewing a diff between two versions of a file help you see the bug that was introduced?
+
+By comparing the old versus the new lines that changed, I could focus on looking
+for subtle differences.
+
+2) How could having easy access to the entire history of a file make you a more efficient 
+programmer in the long term?
+
+Suppose in a newer version some widget did not work properly(something broke); in prior versions
+the same widget did work properly.  Then, I could compare the new 'broken widget' version
+with a previous 'correctly working widget' version and ask what was different between these
+versions that can cause the broken widget. 
+
+3) What do you think are the pros and cons of manually choosing when to create a commit, 
+like you do in Git, vs having versions automatically saved, like Google docs does?
+
+Pros:  Author decides appropriateness of each commit
+       Author can add unique informational message concerning changes
+
+Cons:  Author may be negligent in doing commits
+
+4) Why do you think some version control systems, like Git, allow saving multiple files in one commit, 
+while others, like Google Docs, treat each file separately?
+
+The Git protocol is designed for more progressinve stype programming where several files
+inter-relate into a cohesive whole.
+The Docs protocol is designed for single file use.  In this case, each file should
+represent some whole entity.
+
+5) How can you use the commands git log and git diff to view the history of files?
+
+Using git log command, returns commit id, author, date, and info message.  The info message (Revert controls) 
+was used in the exercise to obtain a specific commit id.
+
+Use the git diff command with the 'Revert control' id and the next id showing in the log as such:
+    git diff 'Revert control'id nextid 
+This displays information about the number of lines deleted and the number of lines inserted
+between these two successive commits.
+
+6) How might using version control make you more confident to make changes that could break something?
+Ans  If I break something in a new version of code, I can revert to the prior working version.
+Using the Git application, reverting to an earlier version is straightforward.
+
+7) Now that you have your workspace set up, what do you want to try using Git for?
+Ans  To get a deeper understanding about the git-version control system	
+
+
+	 
+  
+  

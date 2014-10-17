@@ -9,3 +9,28 @@ The working area contains files in various modes of modification to achieve a
 new version objective.  Files in the working area can be added to the staging
 area; files in the working area cannot be committed where files in the staging
 area can be committed.
+
+3) How can you use the staging area to make sure you have one commit per logical change?
+Ans Use diff --staged to compare file(s) in staging area and in repository.  View the -/+
+marks to ensure a single logical change.  Another method is to only make a single logical
+change to the file in the working area, then stage it, then commit it.
+
+4) What are some situations when branches would be helpful in keeping your 
+history organized? How would branches help?
+Ans If a current program is working as intended, a branch would be helpful
+if I wanted to modify this program, perhaps, by adding an experimental feature.
+If this modification was not that useful, I would still have the original working
+program in the master branch.
+
+5) How do the diagrams help you visualize the branch structure?
+Ans The diagrams indicate the origin of a new branch.
+
+6) What is the result of merging two branches together? Why do we represent it 
+in the diagram the way we do? 
+Ans The commits from both branches are interleaved according to a timestamp.  
+The effect of the branch should appear in the running of the program in the browser.
+
+7) What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+Ans  Pros Gits merging system identifies conflicts and therefore it allows the programmers to 
+to review and readjust conflicting code.  This is a great benefit.
+Cons None

@@ -1,0 +1,2 @@
+When would you want to use a remote repository rather than keeping all your work local?
+Ans  Creating a remote repository would enable one to work on the files from any computer.
